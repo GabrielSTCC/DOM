@@ -39,7 +39,7 @@ const getCheckBoxInput = ({id, description, completed}) => {
 }
 
 window.onload = () => {
-    //const todoList = document.getElementById("toDoList");
+    const todoList = document.getElementById("todo-list");
     tasks.forEach((task) => {
         const checkbox = getCheckBoxInput(task);
 
@@ -51,6 +51,6 @@ window.onload = () => {
         toDo.appendChild(checkbox);
         toDo.appendChild(button);
 
-        list.appendChild(toDo);
+        todoList.appendChild(toDo);
     })
 }
